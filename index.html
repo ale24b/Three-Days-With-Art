@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content ="width= device-width ,inital-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <style>
+         body{
+             font-family:cursive;
+             font-weight: normal;
+             letter-spacing: 1px;
+
+         }
+
+        .lead{
+            text-align:justify;
+        }
+
+        .container-form{
+                 padding: 20px 0;
+                 margin: 0 auto;
+                 text-align:left;
+                 align-content: space-between;
+                 
+                 
+        
+        }
+        form{
+            max-width: 700px;
+            height: auto;
+            grid-row-gap: 20px;
+
+            
+        }
+        .form-field{
+            display:flex;
+            justify-content:space-between;
+            text-align:center;
+            
+            
+
+        }
+
+        
+            input,select{
+                     pad:10px 15px;
+                     text-align: justify;
+            }
+
+         .heading{
+             text-align: center;
+             border-bottom:2px double #000;
+
+               }
+            .btn-info{
+                  width: 50%;
+                  size: 20px;
+                  letter-spacing: 2px;
+                  background: transparent;
+                  transition:all 0,5% ease-in-out;
+            }
+
+            .btn-info:hover{
+                       transform:scale(1.05);
+            }
+
+
+        
+            .icn{
+               text-align: justify;
+               font-size:  17px;
+            
+           }
+         footer{
+             background:white;
+             position: relative;
+             height: 100px;
+             margin-top:-100px;
+             clear: both;
+             text-align: center;
+             font-size: 10px;
+         }
+
+         
+
+           
+    </style>
+    </head>
+<body>
+    <nav class="navbar navbar-expand-sm text-light bg-dark navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+            <img src="photos/vinyl.png.png" alt="web" style="width:50px;">
+            <span class="text-light " > Three days with Art</span>
+             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collappse" data-bs-target="#baraprabusibila">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collappse navbar-collapse" id="#baraprabusibila">
+            <ul class="navbar-nav ms-auto mr-2 mb-lg-0">
+            <li class="nav-item " >
+            <a class="nav-link " href="#rezervari">Rezervari</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="#testimoniale">Program eveniment</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link" href="#artisti">Artisti</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+            </nav>
+            <div id="caruselulnostru" class="carousel slide" data-bs-ride="carousel">
+            <!--indicatori de slide-uri-->
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#caruselulnostru" data-bs-slide-to="0" class="active"></button>
+               <button type="button" data-bs-target="#caruselulnostru" data-bs-slide-to="1"></button>
+               <button type="button" data-bs-target="#caruselulnostru" data-bs-slide-to="2"></button>
+               <button type="button" data-bs-target="#caruselulnostru" data-bs-slide-to="3"></button>
+               <button type="button" data-bs-target="#caruselulnostru" data-bs-slide-to="4"></button>
+            </div>
+
+            <!--slide-uri propriu zise-->
+           <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="photos/vinyl-carusel.jpg" alt="image" class="d-block w-100">   
+           </div>
+            <div class="carousel-item">
+               <img src="photos/elvis.jpg.jpg" alt="image" class="d-block w-100">
+           </div>
+            <div class="carousel-item">
+                <img src="photos/artist-band1.jpg" alt="image" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="photos/tapes.jpg" alt="image" class="d-block w-100">
+           </div>
+           <div class="carousel-item">
+               <img src="photos/place.jpg" alt="image" class="d-block w-100">
+            </div>
+            </div>
+           
+            <!--butoane de inainte si inapoi-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#caruselulnostru" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#caruselulnostru" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </button>
+                </div>
+            <!--Despre-->
+            <section id="Despre" class="p-5">
+                <div class="container">
+                <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h1>Despre Eveniment</h1>
+                    <br>
+                    <p class="lead">
+                        Daca esti pasionat de carti si muzica,te asteptam la a doua editie a evenimentului nostru .
+                        Adu cu tine cartea ta preferata si de ce nu un vynil ,iar noi venim cu locatia si oamenii faini!
+                        Pe parcursul celor trei seri de eveniment,vei avea parte de un cadru special unde te poti intalni cu alti impatimiti ai muzicii ,dar si cu artisti care vor canta live in cele trei seri.Evenimentul nostru isi propune sa uneasca pasiunea pentru muzica si lectura .
+                         Ne dorim sa nu ii lasam deoparte nici pe iubitorii de lectura ,asa ca va propunem sa schimbati cartile preferate intre voi in timp ce va savurati cafeaua.
+                            Te asteptam la "Insomnia Cafe" pe Strada Univerisatii nr.2 in Cluj Napoca.
+                            Evenimentul se va desfasura in perioada 3-5 August!
+                    </p>
+                </div>
+                </div>
+                </div>
+            </section>
+                <br>
+                <br>
+            
+            <!--artisti-->
+            
+                <div class="container-fluid bg-dark text-light" id="artisti">
+                    <h4 class="display-2 text-center p-3"> Artisti </h4>
+                 <div class="row">
+                     <div class="col-sm-6 col-md-4 col-xl-2 ">
+                       <div class="card m-2">
+                    <img class="card-img-top" src="photos/artist-band-.jpg" alt="musician">
+                    <div class="card-body  text-center">
+                    <h4 class="card-title text-dark"> Michael </h4>
+                    <p class="card-text text-dark">Chitarist</p>
+                    <button type="button" class="btn btn-dark"> Detalii</button>
+                    </div>
+                    </div>
+                    </div> 
+                
+
+                    <div class="col-sm-6 col-md-4 col-xl-2 ">
+                        <div class="card m-2">
+                     <img class="card-img-top" src="photos/pian-artist.jpg" alt="musician">
+                     <div class="card-body  text-center">
+                     <h4 class="card-title text-dark"> Tudor </h4>
+                     <p class="card-text text-dark">Pianist</p>
+                     <button type="button" class="btn btn-dark"> Detalii</button>
+                     </div>
+                     </div>
+                     </div>
+
+                     <div class="col-sm-6 col-md-4 col-xl-2 ">
+                        <div class="card m-2">
+                     <img class="card-img-top" src="photos/artist-band2..jpg" alt="musician">
+                     <div class="card-body  text-center">
+                     <h4 class="card-title text-dark"> Anca </h4>
+                     <p class="card-text text-dark">Solista </p>
+                     <button type="button" class="btn btn-dark"> Detalii</button>
+                     </div>
+                     </div>
+                     </div>
+
+                     <div class="col-sm-6 col-md-4 col-xl-2 ">
+                        <div class="card m-2">
+                     <img class="card-img-top" src="photos/aartist.jpg" alt="musician">
+                     <div class="card-body  text-center">
+                     <h4 class="card-title text-dark"> Florin </h4>
+                     <p class="card-text text-dark">Chitarist </p>
+                     <button type="button" class="btn btn-dark"> Detalii</button>
+                     </div>
+                     </div>
+                     </div>
+
+                     <div class="col-sm-6 col-md-4 col-xl-2">
+                          <div class="card m-2">
+                          <img class="card-img-top" src="photos/artist-chitara.jpg" alt="artist">
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-dark"> Marian</h4>
+                            <p class="card-text text-dark">Chitarist</p>
+                            <button type="button" class="btn btn-dark"> Detalii</button>
+                         </div>
+                         </div>
+                         </div>
+
+                            <div class="col-sm-6 col-md-4 col-xl-2">
+                                <div class="card m-2">
+                                <img class="card-img-top" src="photos/artist-violin.jpg" alt="artist">
+                              <div class="card-body text-center">
+                                  <h4 class="card-title text-dark">Maria</h4>
+                                  <p class="card-text text-dark">Violonista</p>
+                                  <button type="button" class="btn btn-dark"> Detalii</button>
+
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <!--Program-->
+                            <section id="Despre" class="p-5">
+                            <div class="container  bg-light">
+                            <div class="row align-items-center justify-content-between">
+                             <div class="col-md p-5">
+                                 <h1>Program</h1>
+                                 <br>
+                                 <br>
+                            <p class="lead">
+                             <p1>Vineri</p1>   
+                            <li>
+                                12:00-14:00-Coffe Break
+                            </li>
+                            <li>17:00-18:00-Club de carte
+                            </li>  
+                            <li>
+                                19:00-23:00-Karaoke Night
+                            </li>
+                            </p>
+                            
+                            <br>  
+                            <p class="lead">
+                            <p1>Sambata</p1>
+                            <li>14:00-16:00-Vinyl session</li>
+                            <li>19:00-23:50-Jazz Night</li>
+                            </p>
+                            <br>
+                             <p class="lead">
+                            <p1>Duminica</p1>
+                            <li>15:00-17:00-Recitare de Poezie
+                            </li>
+                            <li>19:00-22:00- Concert de Muzica Clasica</li>
+                            </p>
+                            </p>
+
+                            </div>
+                            </div>
+                            </div>
+                            </section>
+         <!--Rezervari-->
+                         <div class="container bg bg-dark text-light text-center">
+                             <div class="row">
+                                <div class="col-md-6">
+                                
+                            </div>
+                            </div>
+                         
+                            <form action="#">
+                                <h2 class="head">Rezervare Online</h2>
+                                <div class="form-field">
+                                    <p>Nume</p>
+                                    <input type="text" placeholder="Nume"> 
+                                </div>
+                                <div class="form-field ">
+                                    <p>E-mail</p>
+                                    <input type="text" placeholder="E-mail">
+
+                                </div>
+                                <div class="form-field">
+                                    <p>Data</p>
+                                    <input type="date  " >
+
+                  </div>
+                     <div class="form-field">
+                         <p>Ora</p>
+                         <input type="time" >
+
+                        </div>
+                   <div class="form-field ">
+                         <p>Numar persoane</p>
+                             <select name="select" id="#">
+                             <option value="1">o peroana</option>
+                             <option value="2"> 2 persoane</option>
+                             <option value="3"> 3 persoane</option>
+                             <option value="4"> 4 persoane</option>
+                              <option value="6"> 6 persoane</option>
+                               <option value="7"> 7 persoane</option>
+                             <option value="8"> 8 persoane</option>
+                             </select>
+
+                        </div>
+                        <button class="btn">Submit</button>
+                        </form>
+                        </div>
+                        </div>
+                        
+                        <br>
+                        <br>
+                        <!--Contact-->
+                        
+                        <div class="container ">
+                            <h2 class="heading">Contact</h2>
+                            <br>
+                              <h2 style="text-align: center;"> We'd love to Help You!<h2>
+                            <br>
+                            <div class="row">
+                            <div class="col-md-6">
+                                <form>
+                            <input type="text" name="text" required="" placeholder="Your Name"class="form-control">
+                              <br>
+                            <input type="Email" name="E-mail" required="" placeholder=" Your mail" class="form-control">
+                            <br>
+                            <textarea rows="6" placeholder="message" required="" class="form-control"></textarea>
+                            <br>
+                            <center>
+                            <button class="btn-btn info">Submit</button>
+                            </center>
+                            <br>
+                            </form>
+                            </div>
+                            
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                            <p1 class="icn"><i class="fa fa-map-marker"></i> &nbsp;&nbsp;Strada Universității 2, Cluj-Napoca </p1>
+                            <p1 class="icn"><i class="fa fa-phone"></i> &nbsp;&nbsp; 0720898654 </p1>
+                            <p1 class="icn"><i class="fa fa-envelope"></i> &nbsp;&nbsp;insomnia@gmail.com </p1>
+                            <hr>
+                            <div class="media">
+                            <ul class="list-unstyled">
+                            <li > <a href="#"></a> <i class="fab fa-facebook-f "></i></li>
+                            <li> <a href="#"></a> <i class="fab fa-instagram"></i></li>
+                            <li> <a href="#"></a> <i class="fab fa-twitter"></i></li>
+                            </ul>
+                            </div>
+                            </div>
+                            
+                        <footer >
+                            <div class="footer-bottom">
+                                <p>copyright &copy;2021 Three Days with Art, Designed by<span> Alexandra Bucur </span> <p>
+                            </div>
+
+                        </footer>
+                        </body>
+                        </html>
